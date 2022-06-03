@@ -8,13 +8,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-composer require zafarjonovich/telegram
+composer require zafarjonovich/db-backuper
 ```
 
 or add
 
 ```
-"zafarjonovich/telegram": "*"
+"zafarjonovich/db-backuper": "*"
 ```
 
 to the require section of your `composer.json` file.
