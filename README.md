@@ -27,6 +27,16 @@ $backuper->backup($credentials);
 
 Let's check, run the following command
 
-`php /home/runner.php`
+`/usr/bin/php7.4 /home/runner.php`
 
 If we look at /home/db_backups, the database will be backuped via named with current_time
+
+
+If you need backup databaseses every n time, you must config crontab
+Run following command
+<br>
+`crontab -e`
+
+And add this configuration
+
+`* * * * * /usr/bin/php7.4 /home/runner.php`
