@@ -1,0 +1,9 @@
+{
+  "name": "zafarjonovich/db-backuper",
+  "type": "package",
+  "autoload": {
+    "psr-4": {
+      "zafarjonovich\\DbBackuper\\": "src"
+    }
+  }
+}
