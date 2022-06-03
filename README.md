@@ -1,5 +1,28 @@
 ### This package helps to you backup databases
 
+-----
+## Installation
+
+The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+
+Either run
+
+```
+composer require zafarjonovich/telegram
+```
+
+or add
+
+```
+"zafarjonovich/telegram": "*"
+```
+
+to the require section of your `composer.json` file.
+
+-----
+
+## Configuration
+
 Simple usage, first create a backup runner file. For example, in the /home folder via name runner.php
 The backup folder must be pre-created, For example, let's create a db_backups folder for the /home folder
 
@@ -30,6 +53,10 @@ Let's check, run the following command
 `/usr/bin/php7.4 /home/runner.php`
 
 If we look at /home/db_backups, the database will be backuped via named with current_time
+
+-----
+
+## Crontab configuration
 
 
 If you need backup databaseses every n time, you must config crontab
