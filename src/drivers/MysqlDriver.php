@@ -10,7 +10,7 @@ class MysqlDriver extends Driver
     public function backup(Credential $credential)
     {
         $fullPath = $credential->getDirectory().'/'.$credential->getBackupBaseName().'.sql.gz';
-        $command = "mysqldump --user={$credential->getUsername()} --password={$credential->getPassword()} --default-character-set={$credential->getCharset()} --single-transaction {database} | gzip > \"{$fullPath}\"";
+        $command = "mysqldump --user={$credential->getUsername()} --password={$credential->getPassword()} --default-character-set={$credential->getCharset()} --single-transaction {$credential->getDatabaseName()} | gzip > \"{$fullPath}\"";
         exec($command);
     }
 

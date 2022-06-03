@@ -35,9 +35,9 @@ class Credential
         return $this->get('host');
     }
 
-    public function getName()
+    public function getDatabaseName()
     {
-        return $this->get('name');
+        return $this->get('databaseName');
     }
 
     public function getCharset()
